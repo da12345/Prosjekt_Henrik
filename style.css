@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+}
+
+footer{
+    position: fixed;
+    bottom: 10px;
+}
+
+header{
+    background-color: darkgray;
+    padding:10px;
+}
+
+footer{
+    background-color: darkgray;
+    width:100%;
+    padding:15px;
+    bottom:0px;
+    left:0px;
+}

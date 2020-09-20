@@ -1,0 +1,65 @@
+/*
+Blåfarge: #043b7c
+Gulfarge: #faa21b
+*/
+
+/*Bakgrunn og generellt fargetema*/
+body{
+    background-color: whitesmoke;
+	margin: 0 8px 0 8px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*Artikkel styling*/
+article{
+	margin: auto;
+	width: 65%
+}
+
+h1, h2, h3{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #043b7c;
+}
+
+/*Header og footer farga*/
+header, footer{
+    background-color: #043b7c;
+    padding: 10px;
+}
+
+header *, footer *{
+	    color: #faa21b;
+}
+
+/*Footer styling*/
+footer{
+    padding: 15px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 0.8em;
+}
+
+/*Logo styling*/
+#logo{
+	float: right;
+    height: 150px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: whitesmoke;
+}
+
+/*Gule punkt*/
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #faa21b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

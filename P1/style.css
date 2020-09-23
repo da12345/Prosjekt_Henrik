@@ -6,7 +6,7 @@ Gulfarge: #faa21b
 /*Bakgrunn og generellt fargetema*/
 body{
     background-color: whitesmoke;
-	margin: 0 8px 0 8px;
+	margin: 0 0 0 0;
 	font-family: "Times New Roman", Times, serif;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3{
 /*Header og footer farga*/
 header, footer{
     background-color: #043b7c;
-    padding: 10px;
+    padding: 30px;
 }
 
 header *, footer *{
@@ -63,3 +63,8 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
+
+/*Fjerner underline på tekstlenke*/
+a:link {
+	text-decoration: none;
+  }

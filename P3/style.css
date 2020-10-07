@@ -38,10 +38,27 @@ header, footer {
 	text-align: center;
 }
 
-nav a {
-	width: 10%;
+header{
+	padding-bottom: 15px;
 }
 
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 15px;
+	border-top: #faa21b 1px solid;
+}
+/*
+nav a{
+	border-right: #faa21b 1px solid;
+}
+*/
+nav div{
+	width: 1px;
+	height: 20px;
+	background-color: #faa21b; 
+}
 
 
 

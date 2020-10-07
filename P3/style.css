@@ -3,32 +3,76 @@ Blåfarge: #043b7c
 Gulfarge: #faa21b
 */
 
+/*
+Navbar:
+90% av bredden
+Hver knapp = 15% av sidens bredd, eller 50/3% av navbarens bredd
+*/
+
 /*Bakgrunn og generellt fargetema*/
 body{
     background-color: whitesmoke;
 	margin: 0 0 0 0;
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Bodoni 72 Oldstyle Book", Arial, sans-serif;
 }
+
+h1,h2,h3,h4 {
+	font-family: "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+}
+
+#logo {
+	width: 250px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: whitesmoke;
+}
+
+header {
+	font-family: "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+}
+
+/*Header og footer farga*/
+header, footer {
+    background-color: #043b7c;
+	padding: 30px;
+	text-align: center;
+}
+
+nav a {
+	width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Artikkel styling*/
 article{
 	margin: auto;
 	width: 65%
 }
-
+/*
 h1, h2, h3{
 	font-family: Arial, Helvetica, sans-serif;
 	color: #043b7c;
 }
-
-/*Header og footer farga*/
-header, footer{
-    background-color: #043b7c;
-    padding: 30px;
-}
+*/
 
 header *, footer *{
-	    color: #faa21b;
+	color: #faa21b;
 }
 
 /*Footer styling*/
@@ -41,15 +85,13 @@ footer p {
 	font-size: 0.8em;
 }
 
-/*Logo styling*/
+/*Logo styling
 #logo{
 	float: right;
     height: 150px;
-	border-radius: 50%;
-	padding: 3px;
-	background-color: whitesmoke;
-}
 
+}
+*/
 /*Gule punkt*/
 ul {
   list-style: none;

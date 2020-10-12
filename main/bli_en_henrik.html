@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>P3: Prosjekt Henrik</title>
+	<link rel="icon" href="logo.png" type="image/logo.png">
+</head>
+<body>
+    <header>
+		<a href="index.html"><img id="logo" src="media/images/logo.png" alt="henrik-logo"><h1>Bli en Henrik</h1></a>
+		<nav>
+			<a href="index.html">Forside</a><div></div>
+			<a href="etymylogi.html">Etymologi</a><div></div>
+			<a href="bli_en_henrik.html">Bli en Henrik</a><div></div>
+			<a href="historiske_henriker.html">Historiske Henriker</a><div></div>
+			<a href="henrik_or_not.html">Henrik or not?</a><div></div>
+			<a href="sitater.html">Sitater</a>
+		</nav>
+	</header>
+	
+	<article>
+		<br><br><br><br><br><br><br>
+		<form>
+		  <label for="HenrikType">Fornavn:</label><br>
+		  <input type="text" id="HenrikType" name="HenrikType" disabled value="Henrik på innsiden"><br>
+		  
+		  <label for="fornavn">Fornavn:</label><br>
+		  <input type="text" id="fornavn" name="fornavn" onchange="henrikType()"><br>
+		  
+		  <label for="etternavn">Etternavn:</label><br>
+		  <input type="text" id="etternavn" name="etternavn"><br>
+		  
+		  <label for="alder">Alder:</label><br>
+		  <input type="number" id="alder" name="alder" min="19" value="19"><br>
+		  <p>Hvilke andre ting ska vi ha med her egtl?</p>
+		</form>
+	</article>
+
+    <footer>
+		<p>Nettsiden er produsert av Daniel Jan Axlid, Henrik Ytrehus Ågotnes, Thomas Baugerød, Jakob Lien og Morten Tobias Rinde Sunde</p>
+    </footer>
+	<script>
+		document.onreadystatechange = function(e){
+			if (document.readyState === 'interactive'){
+				let henrik_type = window.confirm("Er du enten en ekte Henrik, eller en Henrik på innsiden\n Trykk \"OK\" for å bekrefte.");
+				if(!henrik_type){
+					document.body.innerHTML = "403 Forbidden";
+				}
+			}
+		}
+		function henrikType(){
+			let form = document.forms[0];
+			if(document.forms[0].fornavn.value === "Henrik"){
+				document.forms[0].HenrikType.value = "Ekte Henrik";
+			}else{
+				document.forms[0].HenrikType.value = "Henrik på innsiden";
+			}
+		}
+		/*
+		function validateForm(){
+			let form = document.forms[0];
+			if (form["rName"].value === ""){
+				alert("Fill in Real name");
+				return false;
+			}
+			if (form["gender"].value === ""){
+				alert("Fill in gender");
+				return false;
+			}
+			if (form["email"].value === ""){
+				alert("Fill in email")
+				return false;
+			}
+			if (form["birthdate"].value === "" || new Date(form["birthdate"].value) >= earliestDate){
+				alert("Fill in a birthdate before 1988");
+				return false;
+			}
+			if (form["hero"].value === ""){
+				alert("Fill in Hero name");
+				return false;
+			}
+			if (form["spandex"].value === ""){
+				alert("Fill in spandex");
+				return false;
+			}
+			return true;
+		}*/
+	</script>
+</body>
+</html>

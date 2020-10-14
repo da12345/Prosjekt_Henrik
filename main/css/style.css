@@ -17,11 +17,11 @@ body{
 }
 
 h1,h2,h3,h4 {
-	font-family: "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
 
 header {
-	font-family: "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
 
 /*Header og footer farga*/
@@ -53,6 +53,7 @@ nav div{
 /*Zoom på knappan on hover*/
 nav a{
 	transition: transform .2s ease-out;
+	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
 
 nav a:hover {

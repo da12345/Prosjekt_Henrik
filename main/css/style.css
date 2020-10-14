@@ -132,7 +132,7 @@ a:link {
 	text-decoration: none;
   }
   
-/*Henrik or not.......*/
+					/*HENRIK_OR_NOT.HTML - daniel*/
 .selection {
 	width:50%;
 	float: right;
@@ -152,7 +152,7 @@ a:link {
 
 #henrik_or_not img {
 	border: 3px solid #043b7c;
-	display: inline;
+	height:300px;
 }
 
 		/*Påvirker det her knapper på andre sider?*/

@@ -49,11 +49,17 @@ nav {
 	padding-top: 15px;
 	border-top: #faa21b 1px solid;
 }
-/*
+
 nav a{
-	border-right: #faa21b 1px solid;
+	transition: transform .2s ease-out;
 }
-*/
+
+nav a:hover {
+	transform: scale(1.2);
+	
+}
+
+
 nav div{
 	width: 1px;
 	height: 20px;

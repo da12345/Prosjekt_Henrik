@@ -135,3 +135,58 @@ ul li::before {
 a:link {
 	text-decoration: none;
   }
+  
+/*Henrik or not.......*/
+.selection {
+	width:50%;
+	float: right;
+	border: 3px solid #043b7c;
+	font: 25px "Bodoni 72 Oldstyle Book", Arial, sans-serif;
+	border:none;
+	vertical-align:middle;
+	padding-bottom: 10px;
+}
+
+#henrik_or_not {
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px;
+}
+
+#henrik_or_not img {
+	border: 3px solid #043b7c;
+	display: inline;
+}
+
+		/*Påvirker det her knapper på andre sider?*/
+input[type="submit"] {
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	height: 50px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	text-shadow:none;
+}
+
+		/*Påvirker det her knapper på andre sider?*/
+input:hover[type="submit"] {
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	height: 50px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	text-shadow:none;
+}

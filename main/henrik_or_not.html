@@ -6,35 +6,16 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Henrik | Henrik or not?</title>
 	<link rel="icon" href="media/images/favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-		<a href="P2_design_57.html"><img id="logo" src="media/images/logo.png" alt="henrik-logo"><h1>Henrik</h1></a>
-		<nav>
-			<a href="index.html">Forside</a>
-			<div></div>
-			<a href="etymology.html">Etymologi</a>
-			
-			<div></div>
-			<a href="bli_en_henrik.html">Bli en Henrik</a>
-			
-			<div></div>
-			<a href="historical_henriks.html">Historiske Henriker</a>
-			
-			<div></div>
-			<a href="henrik_or_not.html">Henrik or not?</a>
-			
-			<div></div>
-			<a href="sitater.html">Sitater</a>
-		</nav>
-	</header>
-	
 	<section id="henrik_or_not">
 		<form>
 			<div class="formsection" id="daniel">
 				<img src="media/images/henrik_or_not/daniel.png">
 				<fieldset class="selection">
+
 					<!--Disse må oppføre seg annerledes når størrelsen er liten-->
 					<label class="checkmark" for="henrik">
 						<input type="radio" id="henrik" name="question" value="henrik">
@@ -53,7 +34,6 @@
 				</fieldset>
 			</div>
 
-			<br><br>
 
 			<div class="formsection" id="jakob">
 				<img src="media/images/henrik_or_not/jakob.png">
@@ -75,7 +55,7 @@
 				</fieldset>
 			</div>
 
-			<br><br>
+
 
 			<div class="formsection" id="thomas">
 				<img src="media/images/henrik_or_not/thomas.png">
@@ -97,7 +77,7 @@
 				</fieldset>
 			</div>
 
-			<br><br>
+
 
 			<div class="formsection" id="morten">
 				<img src="media/images/henrik_or_not/morten.png">
@@ -119,7 +99,6 @@
 				</fieldset>
 			</div>
 
-			<br><br>
 
 			<div class="formsection" id="eyvind">
 				<img src="media/images/henrik_or_not/eyvind.png">
@@ -141,7 +120,7 @@
 				</fieldset>
 			</div>
 
-			<br><br>
+
 
 			<div class="formsection" id="rotete">
 				<img src="media/images/henrik_or_not/rotete.png">
@@ -163,17 +142,21 @@
 				</fieldset>
 			</div>
 
-			<input type="submit" value="Henrik-kjenner?">
+			<input type="button" id="previous" value="<" onclick="newSlide(-1)">
+			<input type="button" id="next" value=">" onclick="newSlide(1)">
+			<input type="submit" id="henrikkjenner" value="Henrik-kjenner?">
 
-			<br><br>
+
 
 		</form>
 	</section>
+	<script src="js/henrik_or_not.js"></script>
 
     <footer>
 		<p>Nettsiden er produsert av Daniel Jan Axlid, Henrik Ytrehus Ågotnes, Thomas Baugerød, Jakob Lien og Morten Tobias Rinde Sunde</p>
 		<!--Lag JS-funksjon som setter footer på bunnen av siden dersom siden er kortere enn skjermehøyden-->
 	</footer>
+	<script src="js/Header_and_Footer.js"></script>
 </body>
 
 </html>

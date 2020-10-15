@@ -162,6 +162,7 @@ input:hover[type="submit"] {
 	margin-right: auto;
 	width: 50%;
 	padding: 10px;
+	margin-bottom: 70px;
 }
 /*Bilderne til Henrik or Not*/
 #henrik_or_not img {
@@ -194,8 +195,45 @@ input:hover[type="submit"] {
     margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	height:60px;
 	text-align: center;
 	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+/*
+#henrikkjenner {
+	visibility:hidden;
+}
+*/
+
+#henrikkjenner {
+	width:100%;
+}
+
+#previous, #next {
+	width:50%;
+	height:60px;
+	display: block;
+	float: left;
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+#previous:hover, #next:hover{
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
 	text-shadow:none;
 }
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/

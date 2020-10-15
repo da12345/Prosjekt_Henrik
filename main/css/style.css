@@ -1,26 +1,18 @@
 /*
 Blåfarge: #043b7c
 Gulfarge: #faa21b
-*/
-
-/*
-Navbar:
-90% av bredden
-Hver knapp = 15% av sidens bredd, eller 50/3% av navbarens bredd
+Font for headers i Chrome: "Playfair Display SC"
 */
 
 /*Bakgrunn og generellt fargetema*/
 body{
     background-color: whitesmoke;
 	margin: 0 0 0 0;
-	font-family: "Bodoni 72 Oldstyle Book", Arial, sans-serif;
+	font-family: "Bodoni 72 Oldstyle Book", "Playfair Display", sans-serif;
 }
 
+/*Alle headers*/
 h1,h2,h3,h4 {
-	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
-}
-
-header {
 	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
 
@@ -44,6 +36,7 @@ nav {
 	border-top: #faa21b 1px solid;
 }
 
+/*Strekene mellom navbar-knapper*/
 nav div{
 	width: 1px;
 	height: 20px;
@@ -55,10 +48,8 @@ nav a{
 	transition: transform .2s ease-out;
 	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
-
 nav a:hover {
 	transform: scale(1.2);
-	
 }
 
 /*logo styling*/
@@ -74,18 +65,12 @@ article{
 	margin: auto;
 	width: 65%
 }
-
-article img{
+/*Alle bilder i articles UTENOM Henrik or Not*/
+article:not(#henrik_or_not) img{
 	width: 40%
 }
 
-/*
-h1, h2, h3{
-	font-family: Arial, Helvetica, sans-serif;
-	color: #043b7c;
-}
-*/
-
+/*Tekstfarge til navbar og footer*/
 header *, footer *{
 	color: #faa21b;
 }
@@ -95,30 +80,26 @@ html, body {
 	min-height:100%;
 	position:relative;
 }
-
 /*DEN FUCKINGS MAGIEN E SKREIV SOM FIKK FOOTERN TE Å HOLD SEG PÅ BUNNEN! https://youtu.be/lr6sTZjnHJA?t=2*/
 body {
    padding-bottom: 45px; 
 }
-
 footer {
 	position:absolute;
     width: 100%;
     padding: 15px 0 15px 0;
 	top: calc(max(100%, 100vh) - 45px);/*I've been looking at this for four hours now, it's beautiful*/
 }
-
 footer p {
 	margin: 0;
 	font-size: 0.8em;
 }
 
-
-/*Gule punkt*/
+/*Gule punkt*/			/*Om noen lager ul, ellers delete før innlevering*/
 ul {
 	list-style: none;
 }
-
+						/*Om noen lager ul, ellers delete før innlevering*/
 ul li::before {
 	content: "\2022";
 	color: #043b7c;
@@ -133,30 +114,7 @@ a:link {
 	text-decoration: none;
   }
   
-					/*HENRIK_OR_NOT.HTML - daniel*/
-.selection {
-	width:50%;
-	float: right;
-	border: 3px solid #043b7c;
-	font: 25px "Bodoni 72 Oldstyle Book", Arial, sans-serif;
-	border:none;
-	vertical-align:middle;
-	padding-bottom: 10px;
-}
-
-#henrik_or_not {
-    margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	padding: 10px;
-}
-
-#henrik_or_not img {
-	border: 3px solid #043b7c;
-	height:300px;
-}
-
-		/*Påvirker det her knapper på andre sider?*/
+/*Felles styling for alle knapper på siden (nå brukt på "Henrik or Not" og "Historiske Henriker")*/
 input[type="submit"] {
 	background: #043b7c;
 	color:#faa21b;
@@ -168,11 +126,10 @@ input[type="submit"] {
 	margin-right: auto;
 	width: auto;
 	text-align: center;
-	font: bold 40px "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	text-shadow:none;
 }
 
-		/*Påvirker det her knapper på andre sider?*/
 input:hover[type="submit"] {
 	background: rgb(0, 25, 139);
 	color:#faa21b;
@@ -184,6 +141,61 @@ input:hover[type="submit"] {
 	margin-right: auto;
 	width: auto;
 	text-align: center;
-	font: bold 40px "Bodoni 72 Smallcaps Book", Arial, sans-serif;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	text-shadow:none;
 }
+
+					/*HENRIK_OR_NOT.HTML - daniel*/
+/*Fieldsets som innholder svarsalternativen*/					
+.selection {
+	width:50%;
+	float: right;
+	border: 3px solid #043b7c;
+	font: 25px "Bodoni 72 Oldstyle Book", "Playfair Display", sans-serif;
+	border:none;
+	vertical-align:middle;
+	padding-bottom: 10px;
+}
+/*Styling og posisjonering for hele articelen*/
+#henrik_or_not {
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px;
+}
+/*Bilderne til Henrik or Not*/
+#henrik_or_not img {
+	border: 3px solid #043b7c;
+	height:300px;
+}
+
+input[type="submit"] {
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	height: 60px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+	font: bold 40 "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+input:hover[type="submit"] {
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	height: 60px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/

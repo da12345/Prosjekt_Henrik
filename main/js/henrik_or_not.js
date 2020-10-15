@@ -11,15 +11,10 @@ for (i = 1; i < slides.length; i++) { // hides all slides except one
 
 function newSlide(i){ // either -1 or +1
     if (slideIndex+i == -1){  //  first slide and trying to go left: Go to end instead.
-        console.log(i, slideIndex)
-        slides[slideIndex].style.display = "none"
-        slideIndex=5
-        slides[slideIndex].style.display = "block"
+        previous.style.display = "none"
     }
     else if (slides.length == slideIndex+i){  // last slide and trying to go right: start at beginning instead
-        slides[slideIndex].style.display = "none"
-        slideIndex=0
-        slides[slideIndex].style.display = "block"
+        previous.style.display = "none"
     }
     else{  // no edge cases to worry about
         slides[slideIndex].style.display = "none"  // hide current, show next slide
@@ -28,11 +23,6 @@ function newSlide(i){ // either -1 or +1
     }
     
 }
-
-
-
-
-
 
   /*  slides[slideIndex].style.display = "none"  // hide current, show next slide
     if (slideIndex<5) {

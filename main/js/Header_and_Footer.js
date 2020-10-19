@@ -10,5 +10,4 @@ document.body.innerHTML = `<header>
 		</nav>
 	</header>` + document.body.innerHTML + `<footer>
 		<p>Nettsiden er produsert av Daniel Jan Axlid, Henrik Ytrehus Ågotnes, Thomas Baugerød, Jakob Lien og Morten Tobias Rinde Sunde</p>
-		<!--Lag JS-funksjon som setter footer på bunnen av siden dersom siden er kortere enn skjermehøyden-->
     </footer>`;

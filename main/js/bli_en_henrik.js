@@ -2,7 +2,7 @@ document.onreadystatechange = function(e){
 	if (document.readyState === 'interactive'){
 		let henrik_type = window.confirm("Er du enten en ekte Henrik, eller en Henrik på innsiden\n Trykk \"OK\" for å bekrefte.");
 		if(!henrik_type){
-			document.body.innerHTML = "403 Forbidden";
+			document.body.innerHTML = "<div style='font-family: none;'>403 Forbidden</div>";
 		}
 	}
 }

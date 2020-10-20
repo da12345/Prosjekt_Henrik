@@ -1,4 +1,11 @@
-alert("På denne siden kan du høre uttalen av variantene av navnet ved å holde musepekeren over ordet i teksten.")
+window.playing = false;
 function uttal(ord){
-	document.querySelector("#"+ord).play();
+	let audioElem = document.querySelector("#"+ord);
+	if(!window.playing){
+		window.playing = true;
+		audioElem.play();
+		setTimeout(function(){ 
+			window.playing = false;
+		}, audioElem.duration*1000);
+	}
 }

@@ -1,5 +1,5 @@
 document.body.innerHTML = `<header>
-		<a href="index.html"><img id="logo" src="media/images/logo.png" alt="henrik-logo"><h1>Henrik</h1></a>
+		<a href="index.html"><img id="logo" src="media/images/logo.png" alt="henrik-logo"></a>
 		<nav>
 			<a href="index.html">Forside</a><div></div>
 			<a href="etymylogi.html">Etymologi</a><div></div>

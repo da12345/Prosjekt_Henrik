@@ -84,11 +84,12 @@ html, body {
 body {
    padding-bottom: 45px; 
 }
+
 footer {
 	position:absolute;
     width: 100%;
     padding: 15px 0 15px 0;
-	top: calc(max(100%, 100vh) - 45px);/*I've been looking at this for four hours now, it's beautiful*/
+	top: calc(max(100%, 100vh) - 47px);/*I've been looking at this for four hours now, it's beautiful*/
 }
 footer p {
 	margin: 0;

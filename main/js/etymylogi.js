@@ -1,6 +1,4 @@
+alert("På denne siden kan du høre uttalen av variantene av navnet ved å holde musepekeren over ordet i teksten.")
 function uttal(ord){
-	let audioElem = document.querySelector("#"+ord);
-	audioElem.play();
+	document.querySelector("#"+ord).play();
 }
-
-//http://ipa-reader.xyz/

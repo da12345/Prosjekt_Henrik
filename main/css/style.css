@@ -238,3 +238,129 @@ input:hover[type="submit"] {
 	text-shadow:none;
 }
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
+
+
+
+
+								/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
+
+#forsideInfo {
+text-align: left;
+margin: 50px;
+}
+
+#forsideInfo > h1 {
+text-align: left;
+margin-bottom: -10px;
+}
+
+
+
+			/*Instabokser*/
+
+.boksgrid {
+margin-left: -50px;
+margin-top: -20px;
+}
+
+.instaboksseksjon {
+position: relative;
+margin-top: -30px;
+margin-left: 50px;
+display: table;
+max-width: 960px;
+text-align: left;
+}
+
+.instaboksseksjon li {
+list-style: none;
+}
+
+.boksgrid li {
+width: 200px;
+height: 200px;
+display: inline-block;
+margin: 10px;
+
+}
+
+.instaboks {
+width: 100%;
+height: 100%;
+position: relative;
+cursor: pointer;
+border-style: solid;
+border-color: #043b7c ;
+transition: 0.3s ease-in-out
+
+}
+
+.instaboks:hover {
+transform: scale(1.05); 
+}
+
+
+.bokstekst h3 {
+position: relative;
+margin-top: 5px;
+color: black;
+font-size: 25px;
+margin-left: 5px ;
+
+}
+
+
+
+
+
+/*bakgrunnsbilder */
+
+
+
+.etymologi { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+
+}
+
+.historiskeHenriker { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+
+}
+
+.henrikOrNot { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),	
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+
+}
+
+.sitater { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+
+}
+
+/* Sign up */
+
+#signUp a h1 {
+text-align: left;
+margin: 50px;
+margin-top: 70px;
+}

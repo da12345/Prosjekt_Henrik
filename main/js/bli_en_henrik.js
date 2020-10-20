@@ -33,7 +33,7 @@ function validateForm(){
 	}
 	
 	if(!form["versaiTraktaten"].checked){
-		alert("Signer Versaitraktaten")
+		alert("Samtykk til vilkårene i Versaillestraktaten")
 		return false;
 	}
 	

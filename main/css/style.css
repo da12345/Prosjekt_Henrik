@@ -86,11 +86,11 @@ html, body {
 	min-height:100%;
 	position:relative;
 }
+
 /*DEN FUCKINGS MAGIEN E SKREIV SOM FIKK FOOTERN TE Å HOLD SEG PÅ BUNNEN! https://youtu.be/lr6sTZjnHJA?t=2*/
 body {
    padding-bottom: 45px; 
 }
-
 footer {
 	position:absolute;
     width: 100%;
@@ -245,19 +245,18 @@ input:hover[type="submit"] {
 	text-align: center;
 	text-shadow:none;
 }
-					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
 
-					/*BLI EN HENRIK - Jakob*/
+
+					/************* BLI EN HENRIK - Jakob *************/
 
 #meldInn{
 	text-align: center;
 }
 
-					/*SLUTT PÅ BLI EN HENRIK - Jakob*/
 
 
 
-								/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
+					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 
 #forsideInfo {
 text-align: left;
@@ -271,7 +270,7 @@ margin-bottom: -10px;
 
 
 
-			/*Instabokser*/
+					/********INSTABOKSER***********/
 
 .boksgrid {
 margin-left: -50px;
@@ -324,13 +323,14 @@ margin-left: 5px ;
 
 }
 
-/*************** SITATER ****************/
+						/*************** SITATER ****************/
+/*selve sitatteksten*/
 .sitat {
 	font-family: 'Parisienne', cursive;
 	font-size: 100px;
 	text-align: center;
 }
-
+/*div som holder sitaten og kildepersonen*/
 .sitatboks {
 	margin: auto;
 	width: 90%;
@@ -339,12 +339,12 @@ margin-left: 5px ;
 	padding: 10px;
 	padding-top: 0px;
 }
-
+/*basically hele siden*/
 .sitatarticle {
 	padding-top: 20px;
 	padding-bottom: 50px;
 }
-
+/*teksten for kildepersonen*/
 .kilde {
 	font-family: 'Parisienne', cursive;
 	font-size: 40px;
@@ -352,12 +352,7 @@ margin-left: 5px ;
 	padding-right: 20px;
 }
 
-
-
-/*bakgrunnsbilder */
-
-
-
+						/*************** BAKGRUNNSBILDER  **************/
 .etymologi { 
 background: 
 	linear-gradient(
@@ -365,11 +360,8 @@ background:
 		rgba(0, 0, 0, 0.10)
 	),
 	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
-							/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
 }
-
-
-
+						/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 #forsideInfo {
 	text-align: left;
 	margin: 50px;
@@ -380,7 +372,7 @@ background:
 	margin-bottom: -10px;
 	}
 	
-				/*Instabokser*/
+	/* instabokser */
 	
 	.boksgrid {
 	margin-left: -50px;

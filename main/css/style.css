@@ -101,20 +101,22 @@ footer p {
 	margin: 0;
 	font-size: 0.8em;
 }
+	/*Den her gjør at jeg ikke får fjerna bulletsene i boksgriden min - Morten
 
-/*Gule punkt*/			/*Om noen lager ul, ellers delete før innlevering*/
-ul {
-	list-style: none;
-}
-						/*Om noen lager ul, ellers delete før innlevering*/
-ul li::before {
-	content: "\2022";
-	color: #043b7c;
-	font-weight: bold;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em;
-}
+						/*Gule punkt: Om noen lager ul, ellers delete før innlevering
+						ul {
+							list-style: none;
+						}
+												
+						ul li::before {
+							content: "\2022";
+							color: #043b7c;
+							font-weight: bold;
+							display: inline-block;
+							width: 1em;
+							margin-left: -1em;
+						}
+						*/
 
 /*Fjerner underline på tekstlenke*/
 a:link {
@@ -255,125 +257,125 @@ input:hover[type="submit"] {
 
 
 
-								/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
+							/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
+
+
+
 
 #forsideInfo {
-text-align: left;
-margin: 50px;
-}
+	text-align: left;
+	margin: 50px;
+	}
+	
+	#forsideInfo > h1 {
+	text-align: left;
+	margin-bottom: -10px;
+	}
+	
+				/*Instabokser*/
+	
+	.boksgrid {
+	margin-left: -50px;
+	margin-top: -20px;
+	}
+	
+	.instaboksseksjon {
+	position: relative;
+	margin-top: -30px;
+	margin-left: 50px;
+	display: table;
+	max-width: 960px;
+	text-align: left;
+	}
+	
+	.boksgrid li {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 10px;
+	
+	}
+	
+	.instaboks {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	border-style: solid;
+	border-color: #043b7c ;
+	transition: 0.3s ease-in-out
+	
+	}
+	
+	.instaboks:hover {
+	transform: scale(1.05); 
+	}
+	
+	
+	.bokstekst h3 {
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	margin-top: 5px;
+	color: black;
+	font-size: 25px;
+	
+	}
+	
+	
+	
+	
+	
+	/*bakgrunnsbilder */
+	
+	
+	
+	.etymologi { 
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.10), 
+			rgba(0, 0, 0, 0.10)
+		),
+		url(/main/media/images/instaboksBilder/guleTomler200.png)
+	}
+	
+	.historiskeHenriker { 
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.10), 
+			rgba(0, 0, 0, 0.10)
+		),
+		url(/main/media/images/instaboksBilder/guleTomler200.png)
+	}
+	
+	.henrikOrNot { 
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.10), 
+			rgba(0, 0, 0, 0.10)
+		),	
+		url(/main/media/images/instaboksBilder/guleTomler200.png)
+	
+	}
+	
+	.sitater { 
+	background: 
+		linear-gradient(
+			rgba(0, 0, 0, 0.10), 
+			rgba(0, 0, 0, 0.10)
+		),
+		url(/main/media/images/instaboksBilder/guleTomler200.png)
+	
+	}
+	
+	/* Sign up */
+	
+	#signUp {
+	text-align: left;
+	margin: 50px;
+	margin-top: 70px;
+	}
 
-#forsideInfo > h1 {
-text-align: left;
-margin-bottom: -10px;
-}
-
-
-
-			/*Instabokser*/
-
-.boksgrid {
-margin-left: -50px;
-margin-top: -20px;
-}
-
-.instaboksseksjon {
-position: relative;
-margin-top: -30px;
-margin-left: 50px;
-display: table;
-max-width: 960px;
-text-align: left;
-}
-
-.instaboksseksjon li {
-list-style: none;
-}
-
-.boksgrid li {
-width: 200px;
-height: 200px;
-display: inline-block;
-margin: 10px;
-
-}
-
-.instaboks {
-width: 100%;
-height: 100%;
-position: relative;
-cursor: pointer;
-border-style: solid;
-border-color: #043b7c ;
-transition: 0.3s ease-in-out
-
-}
-
-.instaboks:hover {
-transform: scale(1.05); 
-}
-
-
-.bokstekst h3 {
-position: relative;
-margin-top: 5px;
-color: black;
-font-size: 25px;
-margin-left: 5px ;
-
-}
-
-
-
-
-
-/*bakgrunnsbilder */
-
-
-
-.etymologi { 
-background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.10), 
-		rgba(0, 0, 0, 0.10)
-	),
-	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
-
-}
-
-.historiskeHenriker { 
-background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.10), 
-		rgba(0, 0, 0, 0.10)
-	),
-	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
-
-}
-
-.henrikOrNot { 
-background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.10), 
-		rgba(0, 0, 0, 0.10)
-	),	
-	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
-
-}
-
-.sitater { 
-background: 
-	linear-gradient(
-		rgba(0, 0, 0, 0.10), 
-		rgba(0, 0, 0, 0.10)
-	),
-	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
-
-}
-
-/* Sign up */
-
-#signUp a h1 {
-text-align: left;
-margin: 50px;
-margin-top: 70px;
-}
+	#signUp:hover {
+		font-size: x-large;
+	}

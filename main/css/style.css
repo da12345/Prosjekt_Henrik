@@ -324,9 +324,32 @@ margin-left: 5px ;
 
 }
 
-/*font for sitater*/
+/*************** SITATER ****************/
 .sitat {
 	font-family: 'Parisienne', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+
+.sitatboks {
+	margin: auto;
+	width: 90%;
+	height:100%;
+  	border: 3px solid #043b7c;
+	padding: 10px;
+	padding-top: 0px;
+}
+
+.sitatarticle {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.kilde {
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
+	text-align: right;
+	padding-right: 20px;
 }
 
 

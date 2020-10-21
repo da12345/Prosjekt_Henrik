@@ -179,7 +179,7 @@ input:hover[type="submit"] {
 	height:300px;
 }
 
-input[type="submit"] {
+input[type="submit"], #henrikkjenner {
 	background: #043b7c;
 	color:#faa21b;
 	border-style: outset;
@@ -209,15 +209,6 @@ input:hover[type="submit"] {
 	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	text-shadow:none;
 }
-/*
-#henrikkjenner {
-	visibility:hidden;
-}
-*/
-
-#henrikkjenner {
-	width:100%;
-}
 
 #previous, #next {
 	width:50%;
@@ -245,16 +236,25 @@ input:hover[type="submit"] {
 	text-align: center;
 	text-shadow:none;
 }
-<<<<<<< HEAD
 
 #henrik_or_not form{
 	min-width: 550px;
 }
 
+#henrik_or_not fieldset{
+	max-width: 50%;
+}
+
+#henrikkjenner {
+	width:100%;
+	font-size: 30px;
+}
+
+#svar{
+	text-align: center;
+}
 
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
-=======
->>>>>>> 511530ac46bce07e7b4b7a79c72c1fb3bc883324
 
 
 					/************* BLI EN HENRIK - Jakob *************/
@@ -262,9 +262,6 @@ input:hover[type="submit"] {
 #meldInn{
 	text-align: center;
 }
-
-
-
 
 					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 

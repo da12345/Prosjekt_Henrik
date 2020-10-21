@@ -86,11 +86,11 @@ html, body {
 	min-height:100%;
 	position:relative;
 }
+
 /*DEN FUCKINGS MAGIEN E SKREIV SOM FIKK FOOTERN TE Å HOLD SEG PÅ BUNNEN! https://youtu.be/lr6sTZjnHJA?t=2*/
 body {
    padding-bottom: 45px; 
 }
-
 footer {
 	position:absolute;
     width: 100%;
@@ -245,45 +245,144 @@ input:hover[type="submit"] {
 	text-align: center;
 	text-shadow:none;
 }
+<<<<<<< HEAD
 
 #henrik_or_not form{
 	min-width: 550px;
 }
 
-/*
-#next, #previous{
-	min-width: calc(50%-16px);
-	display: inline;
-}*/
 
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
+=======
+>>>>>>> 511530ac46bce07e7b4b7a79c72c1fb3bc883324
 
-					/*BLI EN HENRIK - Jakob*/
+
+					/************* BLI EN HENRIK - Jakob *************/
 
 #meldInn{
 	text-align: center;
 }
 
-					/*SLUTT PÅ BLI EN HENRIK - Jakob*/
 
 
 
-							/* ***************** FORSIDE - INDEX.HTML - MORTEN ******************* */
+					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
+
+#forsideInfo {
+text-align: left;
+margin: 50px;
+}
+
+#forsideInfo > h1 {
+text-align: left;
+margin-bottom: -10px;
+}
 
 
 
+					/********INSTABOKSER***********/
 
+.boksgrid {
+margin-left: -50px;
+margin-top: -20px;
+}
+
+.instaboksseksjon {
+position: relative;
+margin-top: -30px;
+margin-left: 50px;
+display: table;
+max-width: 960px;
+text-align: left;
+}
+
+.instaboksseksjon li {
+list-style: none;
+}
+
+.boksgrid li {
+width: 200px;
+height: 200px;
+display: inline-block;
+margin: 10px;
+
+}
+
+.instaboks {
+width: 100%;
+height: 100%;
+position: relative;
+cursor: pointer;
+border-style: solid;
+border-color: #043b7c ;
+transition: 0.3s ease-in-out
+
+}
+
+.instaboks:hover {
+transform: scale(1.05); 
+}
+
+
+.bokstekst h3 {
+position: relative;
+margin-top: 5px;
+color: black;
+font-size: 25px;
+margin-left: 5px ;
+
+}
+
+						/*************** SITATER ****************/
+/*selve sitatteksten*/
+.sitat {
+	font-family: 'Parisienne', cursive;
+	font-size: 100px;
+	text-align: center;
+}
+/*div som holder sitaten og kildepersonen*/
+.sitatboks {
+	margin: auto;
+	width: 90%;
+	height:100%;
+  	border: 3px solid #043b7c;
+	padding: 10px;
+	padding-top: 0px;
+}
+/*basically hele siden*/
+.sitatarticle {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+/*teksten for kildepersonen*/
+.kilde {
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+						/*************** BAKGRUNNSBILDER  **************/
+.etymologi { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+}
+						/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 #forsideInfo {
 	text-align: left;
 	margin: 50px;
 	}
-	
+
 	#forsideInfo > h1 {
 	text-align: left;
 	margin-bottom: -10px;
 	}
 	
-				/*Instabokser*/
+	/* instabokser */
 	
 	.boksgrid {
 	margin-left: -50px;

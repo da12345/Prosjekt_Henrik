@@ -245,6 +245,17 @@ input:hover[type="submit"] {
 	text-align: center;
 	text-shadow:none;
 }
+
+#henrik_or_not form{
+	min-width: 550px;
+}
+
+/*
+#next, #previous{
+	min-width: calc(50%-16px);
+	display: inline;
+}*/
+
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
 
 					/*BLI EN HENRIK - Jakob*/

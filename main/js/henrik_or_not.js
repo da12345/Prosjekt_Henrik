@@ -35,9 +35,7 @@ document.onkeydown = checkKey;
 
 // inspired by https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
 function checkKey(e) {
-
     e = e || window.event;
-
     if (e.keyCode == '37') {
         newSlide(-1)
        // left arrow
@@ -46,5 +44,12 @@ function checkKey(e) {
         newSlide(1)
        // right arrow
     }
-
 }
+
+
+/*const fasitenVÅR = []
+function sjekkSvar(){
+	
+}*/
+
+	

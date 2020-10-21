@@ -10,6 +10,7 @@ for (i = 1; i < slides.length; i++) { // hides all slides except one
 }
 
 function newSlide(i){ // either -1 or +1
+    console.log(slideIndex)
     if (slideIndex+i == -1){  //  first slide and trying to go left: Go to end instead.
         previous.style.display = "none"
     }

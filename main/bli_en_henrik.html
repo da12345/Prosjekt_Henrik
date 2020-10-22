@@ -10,7 +10,7 @@
 <body>
 	<article>
 		<h2>Bli en Henrik</h2>
-		<form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" onsubmit="return validateForm()" method="post" id="meldInn">
+		<form id="meldInn">
 		  <label for="HenrikType">Henrik Type:</label><br>
 		  <input type="text" id="HenrikType" name="HenrikType" disabled value="Henrik på innsiden"><br>
 		  
@@ -27,7 +27,7 @@
 		  <input type="checkbox" id="versaiTraktaten" name="versaiTraktaten" min="19">
 		  <label for="versaitraktaten">Ved å krysse av samtykker du til vilkårene i Versaillestraktaten.</label><br><br>
 		  
-		  <input type="submit" value="Submit">
+		  <input value="Submit" type="button" id="meldInnKnapp" onclick="submitForm()">
 		</form>
 	</article>
 	<script src="js/bli_en_henrik.js"></script>

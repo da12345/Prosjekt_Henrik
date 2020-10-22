@@ -28,14 +28,14 @@ header{
 }
 
 /*Navbar styling*/
-nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding-top: 15px;
-	border-top: #faa21b 1px solid;
+@media screen and (min-width: 800px) {
+	.topnav {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 15px;
+		border-top: #faa21b 1px solid;
+	}
 }
-
 /*Strekene mellom navbar-knapper*/
 nav div{
 	width: 1px;
@@ -43,13 +43,36 @@ nav div{
 	background-color: #faa21b; 
 }
 
-/*Zoom på knappan on hover*/
 nav a{
-	transition: transform .2s ease-out;
 	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 }
-nav a:hover {
-	transform: scale(1.2);
+
+/*Full zoom på knappan on hover, om siden er stor nok at det ikke skal se rart ut*/
+@media screen and (min-width: 930px) {
+	nav a{
+		transition: transform .2s ease-out;
+	}
+	nav a:hover {
+		transform: scale(1.2);
+	}
+}
+/*Mindre zoom på knappan on hover, hvis siden er mindre, men ikke dropdown-navbar*/
+@media screen and (max-width: 930px) {
+	nav a{
+		transition: transform .2s ease-out;
+	}
+	nav a:hover {
+		transform: scale(1.05);
+	}
+}
+/*Ingen zoom på knappan on hover, hvis dropdown-navbar*/
+@media screen and (max-width: 800px) {
+	nav a{
+		transition: none;
+	}
+	nav a:hover {
+		transform: none;
+	}
 }
 
 /*logo styling*/
@@ -59,6 +82,27 @@ nav a:hover {
 	padding: 3px;
 	background-color: whitesmoke;
 	margin-bottom: 20px;
+	transition: transform .2s ease-out;
+}
+#bars {
+	transition: transform .2s ease-out;
+}
+#bars:hover {
+		transform: scale(1.1);
+}
+#cross {
+	transition: transform .2s ease-out;
+}
+#cross:hover {
+		transform: scale(1.1);
+}
+
+#home {
+	transition: transform .2s ease-out;
+}
+
+#home:hover {
+	transform: scale(1.1);
 }
 
 /*Artikkel styling*/
@@ -486,3 +530,89 @@ background:
 	#signUp:hover {
 		font-size: x-large;
 	}
+
+
+
+
+
+
+			/******** RESPONSIVE DESIGN - DANIEL *********/
+/*dropdown nav*/
+
+/*hides icons by default (large window)*/
+#bars {
+	display: none;
+}
+#cross {
+	display:none;
+}
+#home {
+	display:none;
+}
+
+/*when width <800px*/
+@media screen and (max-width: 800px) {
+	/*sets header properties*/
+	header{
+		padding-top: 30px;
+		text-align: center;
+		height: 316px;
+	}
+	/*hides ordinary menu items*/
+	.topnav a {
+		display: none;
+	}
+	/*hides nav separating bars*/
+	nav div {
+		display: none;
+	}
+	/*hides yellow top border*/
+	.topnav {
+		border-top: none;
+	}
+	/*displays bars icon*/
+	#bars {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		float:left;
+		left:90px;
+	}
+	/*sets properties for cross icon (not visible until called through myFunction()*/
+	#cross {
+		overflow: hidden;
+		position: absolute;
+		float:left;
+		left:90px;
+	}
+	/*sets properties for home icon*/
+	#home {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		float:left;
+	}
+	/*sets properties for and displays dropdown menu a links*/
+	.nav.responsive {
+		display: block;
+		width:100%;
+		font-size: 20px;
+	}
+	/*nav container for dropdown*/
+	.topnav.responsive {
+		background-color: #043b7c;
+		width:190px;
+		border-radius: 0.5em;
+		text-align: right;
+		padding: 20px;
+		z-index: 0;
+		position: absolute;
+		left:130px;
+	}
+	/*padding between dropdown nav links*/
+	.nav.responsive {
+		padding:5px;
+	}
+}
+/*to do responsive design:
+-- fikse henrik or not

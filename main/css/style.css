@@ -133,7 +133,7 @@ html, body {
 
 /*DEN FUCKINGS MAGIEN E SKREIV SOM FIKK FOOTERN TE Å HOLD SEG PÅ BUNNEN! https://youtu.be/lr6sTZjnHJA?t=2*/
 body {
-   padding-bottom: 45px; 
+   padding-bottom: 77px; 
 }
 footer {
 	position:absolute;
@@ -198,6 +198,22 @@ input:hover[type="submit"] {
 	text-shadow:none;
 }
 
+					/************* TipBox - Jakob *************/
+
+.tipBox{
+	position: fixed;
+	width: 200px;
+	right: 0;
+	top: 500px;
+	background-color: whitesmoke;
+	border-radius: 10px 0 0 10px;
+	border: dashed 2px #043b7c;
+	padding: 6px;
+	border-right: none;
+}
+
+					/************* SLUTT PÅ TipBox - Jakob *************/
+					
 					/*HENRIK_OR_NOT.HTML - daniel*/
 /*Fieldsets som innholder svarsalternativen*/					
 .selection {
@@ -223,7 +239,7 @@ input:hover[type="submit"] {
 	height:300px;
 }
 
-input[type="submit"], #henrikkjenner {
+input[type="submit"], #henrikkjenner, #meldInnKnapp{
 	background: #043b7c;
 	color:#faa21b;
 	border-style: outset;
@@ -234,23 +250,15 @@ input[type="submit"], #henrikkjenner {
 	margin-right: auto;
 	width: 50%;
 	text-align: center;
-	font: bold 40 "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	text-shadow:none;
 }
 
-input:hover[type="submit"] {
+input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
 	background: rgb(0, 25, 139);
 	color:#faa21b;
 	border-style: outset;
 	border-color: gray;
-	height: 60px;
-	display: block;
-    margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	height:60px;
-	text-align: center;
-	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	text-shadow:none;
 }
 
@@ -307,6 +315,8 @@ input:hover[type="submit"] {
 	text-align: center;
 }
 
+
+					/************* SLUTT PÅ BLI EN HENRIK - Jakob *************/
 					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 
 #forsideInfo {
@@ -376,13 +386,13 @@ margin-left: 5px ;
 
 						/*************** SITATER ****************/
 /*selve sitatteksten*/
-.sitat {
+#sitat {
 	font-family: 'Parisienne', cursive;
-	font-size: 100px;
+	font-size: 70px;
 	text-align: center;
 }
 /*div som holder sitaten og kildepersonen*/
-.sitatboks {
+#sitatboks {
 	margin: auto;
 	width: 90%;
 	height:100%;
@@ -391,12 +401,12 @@ margin-left: 5px ;
 	padding-top: 0px;
 }
 /*basically hele siden*/
-.sitatarticle {
+#sitatarticle {
 	padding-top: 20px;
 	padding-bottom: 50px;
 }
 /*teksten for kildepersonen*/
-.kilde {
+#kilde {
 	font-family: 'Parisienne', cursive;
 	font-size: 40px;
 	text-align: right;

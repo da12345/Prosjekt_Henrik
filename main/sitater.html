@@ -13,18 +13,20 @@
 	<script src="https://kit.fontawesome.com/566c5c9474.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<article class="sitatarticle">
-		
-		<div class="sitatboks">
-			<h2 class="sitat">De siste gjester
+	<article id="sitatarticle">
+		<div id="sitatboks" onclick="nyttSitat()">
+			<h4 id="sitat">De siste gjester
 				vi fulgte til grinden;
 				farvellets rester
-				tok nattevinden.</h2>
-			<p class="kilde">-Henrik Ibsen</p>
+				tok nattevinden.</h4>
+			<p id="kilde">-Henrik Ibsen</p>
 		</div>
-
-		
+		<div class="tipBox">
+			<p>Psst: Trykk inni den store boksen for å få levert et nytt sitat:)</p>
+			<button onclick="this.parentElement.remove()">Ok!</button>
+		</div>
 	</article>
+	<script src="js/sitater.js"></script>
 	<script src="js/Header_and_Footer.js"></script>
 </body>
 </html>

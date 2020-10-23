@@ -328,8 +328,6 @@ input[type=number], select, textarea {
 input[type=text], input[type=number] {
 	font: 95% Arial, times, sans-serif;
 	max-width: 400px;
-	padding: 15px;
-	margin: 10px auto;
 	background: #f7f7f7;
 }
 form, h2 {
@@ -340,10 +338,6 @@ form, h2 {
 }
 input[type=text], input[type=number], input[type=checkbox], textarea, select
 {
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -356,7 +350,11 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	color: #555;
 	font: 95% Arial, Helvetica, sans-serif;	
 }
-
+input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, textarea:focus, select:focus
+{
+	border: 1px solid #043b7c;
+	box-shadow: 0 0 5px #043b7c;
+}
 
 
 

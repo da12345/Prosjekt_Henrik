@@ -330,7 +330,7 @@ input[type=text], input[type=number] {
 	background: #f7f7f7;
 }
 form, h2 {
-	font-size: 20%;
+	font-size: 256%;
 	font-weight: 250;
 	text-align: center;
 	color:black;
@@ -343,9 +343,7 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	-moz-box-sizing: border-box;
 	width: 100%;
 	background: #fff;
-	margin-bottom: 4%;
 	border: 1px solid #ccc;
-	padding: 3%;
 	color: #555;
 	font: 95% Arial, Helvetica, sans-serif;	
 }

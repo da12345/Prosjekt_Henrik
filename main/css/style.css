@@ -532,30 +532,27 @@ background:
 	#signUp:hover {
 		font-size: x-large;
 	}
-
-
-
-
-
-
-			/******** RESPONSIVE DESIGN - DANIEL *********/
-/*dropdown nav*/
-
-/*hides icons by default (large window)*/
-#bars {
-	display: none;
-}
-#cross {
+.bars {
 	display:none;
 }
-
+.cross {
+	display:none;
+}
+			/******** RESPONSIVE DESIGN - DANIEL *********/
+/*dropdown nav*/
 /*when width <800px*/
 @media screen and (max-width: 800px) {
-	/*sets header properties*/
+	article{
+		margin: auto;
+		width: 90%
+	}
 	header{
 		padding-top: 30px;
 		text-align: center;
 		height: 316px;
+	}
+	footer {
+		font-size: 15px;
 	}
 	/*hides ordinary menu items*/
 	.topnav a {
@@ -569,20 +566,29 @@ background:
 	.topnav {
 		border-top: none;
 	}
-	/*displays bars icon*/
-	#bars {
+	/*displays bars icon as default and sets positioning*/
+	.bars {
 		display: block;
 		overflow: hidden;
 		position: absolute;
 		float:left;
 		left:23px;
 	}
-	/*sets properties for cross icon (not visible until called through myFunction()*/
-	#cross {
+	/* hides cross icon as default and sets positioning*/
+	.cross {
+		display:none;
 		overflow: hidden;
 		position: absolute;
 		float:left;
 		left:23px;
+	}
+	/*displays cross when bars clicked (when function activated)*/
+	.cross.responsive {
+		display:block;
+	}
+	/*hides bars when bars clicked (when function activated)*/
+	.bars.responsive {
+		display:none;
 	}
 	/*sets properties for and displays dropdown menu a links*/
 	.nav.responsive {
@@ -595,17 +601,31 @@ background:
 		background-color: #043b7c;
 		width:190px;
 		border-radius: 0.5em;
-		text-align: right;
+		text-align: center;
 		padding: 20px;
 		z-index: 0;
 		position: absolute;
-		left:5px;
+		left:0px;
 		top:350px;
 	}
 	/*padding between dropdown nav links*/
 	.nav.responsive {
 		padding:5px;
 	}
+	/*selve sitatteksten*/
+	#sitat {
+		font-family: 'Parisienne', cursive;
+		font-size: 50px;
+		text-align: center;
+}
+	/*teksten for kildepersonen*/
+	#kilde {
+		font-family: 'Parisienne', cursive;
+		font-size: 30px;
+		text-align: right;
+		padding-right: 20px;
+	}
 }
 /*to do responsive design:
 -- fikse henrik or not
+-- lavere meny med page height <600px

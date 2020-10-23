@@ -312,6 +312,14 @@ input[type=text], select, textarea {
 	padding: 10px;
 	border: 1px solid;
 	border-radius: 2px;
+	resize: vertical;
+}
+
+form > label {
+	grid-column-start: start;
+	grid-column-end: center;
+	align-self: center;
+
 }
 
 

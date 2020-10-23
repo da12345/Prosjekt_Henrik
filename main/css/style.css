@@ -335,26 +335,7 @@ form, h2 {
 	text-align: center;
 	color:black;
 }
-input[type=text], input[type=number], input[type=checkbox], textarea, select
-{
-	outline: none;
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	width: 100%;
-	background: #fff;
-	margin-bottom: 4%;
-	border: 1px solid #ccc;
-	padding: 3%;
-	color: #555;
-	font: 95% Arial, Helvetica, sans-serif;	
-}
-input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, textarea:focus, select:focus
-{
-	border: 1px solid yellow;
-	box-shadow: 0 0 5px yellow;
-	padding: 25%;
-}
+
 
 
 

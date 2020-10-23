@@ -336,7 +336,6 @@ form, h2 {
 	font-size: 140%;
 	font-weight: 250;
 	text-align: center;
-	background: darkblue;
 	color:black;
 }
 input[type=text], input[type=number], input[type=checkbox], input[type=button], textarea, select

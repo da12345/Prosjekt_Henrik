@@ -97,14 +97,6 @@ nav a{
 		transform: scale(1.1);
 }
 
-#home {
-	transition: transform .2s ease-out;
-}
-
-#home:hover {
-	transform: scale(1.1);
-}
-
 /*Artikkel styling*/
 article{
 	margin: auto;
@@ -556,9 +548,6 @@ background:
 #cross {
 	display:none;
 }
-#home {
-	display:none;
-}
 
 /*when width <800px*/
 @media screen and (max-width: 800px) {
@@ -586,21 +575,14 @@ background:
 		overflow: hidden;
 		position: absolute;
 		float:left;
-		left:90px;
+		left:23px;
 	}
 	/*sets properties for cross icon (not visible until called through myFunction()*/
 	#cross {
 		overflow: hidden;
 		position: absolute;
 		float:left;
-		left:90px;
-	}
-	/*sets properties for home icon*/
-	#home {
-		display: block;
-		overflow: hidden;
-		position: absolute;
-		float:left;
+		left:23px;
 	}
 	/*sets properties for and displays dropdown menu a links*/
 	.nav.responsive {
@@ -617,7 +599,8 @@ background:
 		padding: 20px;
 		z-index: 0;
 		position: absolute;
-		left:130px;
+		left:5px;
+		top:350px;
 	}
 	/*padding between dropdown nav links*/
 	.nav.responsive {

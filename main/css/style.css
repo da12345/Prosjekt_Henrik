@@ -345,7 +345,7 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	-moz-box-sizing: border-box;
 	width: 100%;
 	background: #fff;
-	margin-bottom: 5%;
+	margin-bottom: 1%;
 	border: 1px solid white;
 	color: #555;
 	font: 95% Arial, times, sans-serif;	

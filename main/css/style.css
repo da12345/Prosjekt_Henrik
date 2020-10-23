@@ -324,7 +324,7 @@ input[type=number], select, textarea {
 	resize: vertical;
 }
 ***/
-input[type=text], input[type=number] {
+input[type=text], input[type=number], input[type=checkbox] {
 	font: 95% Arial, times, sans-serif;
 	max-width: 450px;
 	background: #f7f7f7;
@@ -347,7 +347,7 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	background: #fff;
 	margin-bottom: 3%;
 	border: 1px solid white;
-	padding: 10%;
+	padding: 1%;
 	color: #555;
 	font: 95% Arial, times, sans-serif;	
 }

@@ -196,7 +196,7 @@ input:hover[type="submit"] {
 	position: fixed;
 	width: 200px;
 	right: 0;
-	top: 500px;
+	top: 50%;
 	background-color: whitesmoke;
 	border-radius: 10px 0 0 10px;
 	border: dashed 2px #043b7c;
@@ -306,6 +306,34 @@ input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
 #meldInn{
 	text-align: center;
 }
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+
+input[type=number], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+
+
+form > label {
+	grid-column-start: start;
+	grid-column-end: center;
+	align-self: center;
+
+	font-size: 1.2em;
+}
+
+
+
 
 
 					/************* SLUTT PÅ BLI EN HENRIK - Jakob *************/

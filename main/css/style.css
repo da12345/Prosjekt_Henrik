@@ -196,7 +196,7 @@ input:hover[type="submit"] {
 	position: fixed;
 	width: 200px;
 	right: 0;
-	top: 500px;
+	top: 50%;
 	background-color: whitesmoke;
 	border-radius: 10px 0 0 10px;
 	border: dashed 2px #043b7c;
@@ -301,14 +301,77 @@ input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
 
 
-					/************* BLI EN HENRIK - Jakob *************/
+					/************* BLI EN HENRIK - Thomas *************/
 
 #meldInn{
 	text-align: center;
 }
 
+/***
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
 
-					/************* SLUTT PÅ BLI EN HENRIK - Jakob *************/
+input[type=number], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+***/
+input[type=text], input[type=number] {
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	max-width: 450px;
+	background: #f7f7f7;
+	padding: 15%;
+}
+form, h2 {
+	font: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif, bolder;
+	font-size: 140%;
+	font-weight: 250;
+	text-align: center;
+	color:black;
+	padding: 12px 0;
+
+
+}
+input[type=text], input[type=number], input[type=checkbox], textarea, select
+{
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 3%;
+	border: 1px solid white;
+	padding: 1.5%;
+	text-align: center;
+
+	
+}
+input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, textarea:focus, select:focus
+{
+	box-shadow: 0 0 5px #043b7c;
+	border: 3px solid #043b7c;
+	padding: 1.5%
+
+}
+
+
+
+
+
+
+
+
+					/************* SLUTT PÅ BLI EN HENRIK - Thomas *************/
 					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 
 #forsideInfo {

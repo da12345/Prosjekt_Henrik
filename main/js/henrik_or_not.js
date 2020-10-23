@@ -31,20 +31,6 @@ function newSlide(i){ // either -1 or +1
     }
 }*/
 
-document.onkeydown = checkKey;
-
-// inspired by https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
-function checkKey(e) {
-    e = e || window.event;
-    if (e.keyCode == '37') {
-        newSlide(-1)
-       // left arrow
-    }
-    else if (e.keyCode == '39') {
-        newSlide(1)
-       // right arrow
-    }
-}
 
 
 const fasitenVår = ["ikkehenrik", "idhenrik", "idhenrik", "ikkehenrik", "ikkehenrik", "henrik"];

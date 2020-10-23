@@ -315,11 +315,21 @@ input[type=text], select, textarea {
 	resize: vertical;
 }
 
+input[type=number], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+
+
 form > label {
 	grid-column-start: start;
 	grid-column-end: center;
 	align-self: center;
 
+	font-size: 1.2em;
 }
 
 

@@ -205,15 +205,7 @@ input:hover[type="submit"] {
 }
 
 					/************* SLUTT PÅ TipBox - Jakob *************/
-
-					/************* Etymologi - Jakob *************/
-
-span[onmouseover] {
-	  font-style: italic;
-}
-
-					/************* SLUTT PÅ Etymologi - Jakob *************/
-
+					
 					/*HENRIK_OR_NOT.HTML - daniel*/
 /*Fieldsets som innholder svarsalternativen*/					
 .selection {
@@ -345,11 +337,13 @@ form, h2 {
 	font-weight: 250;
 	text-align: center;
 	color:black;
-	font: bold;
-	
 }
 input[type=text], input[type=number], input[type=checkbox], textarea, select
 {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;

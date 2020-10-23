@@ -325,7 +325,7 @@ input[type=number], select, textarea {
 }
 ***/
 
-input[type=text] {
+input[type=text], input[type=number] {
 	font: 95% Arial, times, sans-serif;
 	max-width: 400px;
 	padding: 15px;
@@ -337,8 +337,10 @@ form, h2 {
 	font-weight: 250;
 	text-align: center;
 	color:black;
+	font: bold;
+	background: #043b7c;
 }
-input[type=text], input[type=number], input[type=checkbox], input[type=button], textarea, select
+input[type=text], input[type=number], input[type=checkbox], textarea, select
 {
 	outline: none;
 	box-sizing: border-box;

@@ -1,6 +1,5 @@
 y = document.body.innerHTML = `<header>
 		<a id="logoholder" href="index.html"><img id="logo" src="media/images/logo.png" alt="henrik-logo"></a>
-		<a href="index.html" class="home" id="home" ><i class="fas fa-home fa-2x"></i></a>
 		<a href="javascript:void(0);" class="bars" id="bars" onclick="myFunction()"><i class="fa fa-bars fa-2x"></i></a>
 		<a href="javascript:void(0);" class="cross" id="cross" onclick="myFunction()"><i class="fas fa-times fa-2x"></i></a>
 		<nav class="topnav" id="myTopnav">
@@ -35,12 +34,7 @@ function myFunction() {
 		bars.style.display = "none"
 		cross.style.display = "block"
 	}
-	if (a.style.display = "block") {
-		a.style.display = "none"
-	}
-
-
-
+	
 	if (x.className === "topnav"){
 		x.className += " responsive";
 	} else {

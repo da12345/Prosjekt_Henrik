@@ -301,12 +301,13 @@ input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
 					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
 
 
-					/************* BLI EN HENRIK - Jakob *************/
+					/************* BLI EN HENRIK - Thomas *************/
 
 #meldInn{
 	text-align: center;
 }
 
+/***
 input[type=text], select, textarea {
 	width: 100%;
 	padding: 10px;
@@ -322,21 +323,22 @@ input[type=number], select, textarea {
 	border-radius: 2px;
 	resize: vertical;
 }
+***/
 
-
-form > label {
-	grid-column-start: start;
-	grid-column-end: center;
-	align-self: center;
-
-	font-size: 1.2em;
+input[type=text] {
+	font: 95% Arial, times, sans-serif;
+	max-width: 400px;
+	padding: 15px;
+	margin: 10px auto;
+	background: #f7f7f7;
 }
 
 
 
 
 
-					/************* SLUTT PÅ BLI EN HENRIK - Jakob *************/
+
+					/************* SLUTT PÅ BLI EN HENRIK - Thomas *************/
 					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
 
 #forsideInfo {

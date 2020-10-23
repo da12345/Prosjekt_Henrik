@@ -205,7 +205,15 @@ input:hover[type="submit"] {
 }
 
 					/************* SLUTT PÅ TipBox - Jakob *************/
-					
+
+					/************* Etymologi - Jakob *************/
+
+span[onmouseover] {
+	  font-style: italic;
+}
+
+					/************* SLUTT PÅ Etymologi - Jakob *************/
+
 					/*HENRIK_OR_NOT.HTML - daniel*/
 /*Fieldsets som innholder svarsalternativen*/					
 .selection {

@@ -204,7 +204,7 @@ input:hover[type="submit"] {
 	position: fixed;
 	width: 200px;
 	right: 0;
-	top: 500px;
+	top: 50%;
 	background-color: whitesmoke;
 	border-radius: 10px 0 0 10px;
 	border: dashed 2px #043b7c;

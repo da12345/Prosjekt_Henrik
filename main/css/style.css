@@ -315,6 +315,16 @@ input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
 	text-align: center;
 }
 
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+}
+
+
+
+
 
 					/************* SLUTT PÅ BLI EN HENRIK - Jakob *************/
 					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/

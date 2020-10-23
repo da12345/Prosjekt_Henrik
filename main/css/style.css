@@ -324,21 +324,26 @@ input[type=number], select, textarea {
 	resize: vertical;
 }
 ***/
-input[type=text], input[type=number], input[type=checkbox] {
-	font: 95% Arial, times, sans-serif;
+input[type=text], input[type=number] {
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	max-width: 450px;
 	background: #f7f7f7;
 	padding: 15%;
 	margin: 1px auto;
 }
 form, h2 {
+	font: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif, bolder;
 	font-size: 140%;
 	font-weight: 250;
 	text-align: center;
 	color:black;
+	padding: 12px 0;
+
+
 }
 input[type=text], input[type=number], input[type=checkbox], textarea, select
 {
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	outline: none;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -347,14 +352,16 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	background: #fff;
 	margin-bottom: 3%;
 	border: 1px solid white;
-	padding: 1%;
-	color: #555;
-	font: 95% Arial, times, sans-serif;	
+	padding: 1.5%;
+	text-align: center;
+
+	
 }
 input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, textarea:focus, select:focus
 {
-	box-shadow: 0 0 5x #043b7c;
+	box-shadow: 0 0 5px #043b7c;
 	border: 3px solid #043b7c;
+	padding: 5%;
 
 }
 

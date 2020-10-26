@@ -19,7 +19,7 @@ function myFunction() {
 	var x = document.getElementById("myTopnav");
 	var bars = document.getElementById("bars");
 	var cross = document.getElementById("cross");
-
+	var h = window.innerHeight;
 	if (x.className === "topnav"){
 		x.className += " responsive";
 	} 

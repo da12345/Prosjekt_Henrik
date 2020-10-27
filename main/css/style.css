@@ -334,7 +334,6 @@ input[type=text], input[type=number] {
 form, h2 {
 	font: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif, bolder;
 	font-size: 140%;
-	font-weight: 250;
 	text-align: center;
 	color:black;
 	padding: 12px 0;

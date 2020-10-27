@@ -1,9 +1,8 @@
-var slideIndex = 0
-var slides = document.getElementsByClassName("formsection")
-var button = document.getElementById("henrikkjenner")
-var previous = document.getElementById("previous")
-var next = document.getElementById("next")
-
+let slideIndex = 0
+const slides = document.getElementsByClassName("formsection")
+const button = document.getElementById("henrikkjenner")
+const previous = document.getElementById("previous")
+const next = document.getElementById("next")
 
 for (i = 1; i < slides.length; i++) { // hides all slides except one
     slides[i].style.display = "none";
@@ -21,17 +20,7 @@ function newSlide(i){ // either -1 or +1
         slides[slideIndex+i].style.display = "block"
         slideIndex += i
     }
-    
 }
-
-  /*  slides[slideIndex].style.display = "none"  // hide current, show next slide
-    if (slideIndex<5) {
-        slides[slideIndex+i].style.display = "block"
-        slideIndex += i
-    }
-}*/
-
-
 
 const fasitenVår = ["ikkehenrik", "idhenrik", "idhenrik", "ikkehenrik", "ikkehenrik", "henrik"];
 function sjekkSvar(){

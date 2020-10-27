@@ -216,6 +216,7 @@ input:hover[type="submit"] {
 	border:none;
 	vertical-align:middle;
 	padding-bottom: 10px;
+	text-align: left;
 }
 /*Styling og posisjonering for hele articelen*/
 #henrik_or_not {
@@ -370,17 +371,7 @@ input[type=text]:focus, input[type=number]:focus, textarea:focus, select:focus
 
 
 					/************* SLUTT PÅ BLI EN HENRIK - Thomas *************/
-					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
-
-#forsideInfo {
-text-align: left;
-margin: 50px;
-}
-
-#forsideInfo > h1 {
-text-align: left;
-margin-bottom: -10px;
-}
+	
 
 
 
@@ -521,9 +512,9 @@ margin-bottom: -10px;
 	text-align: center;
 	position: relative;
 	margin-top: 60px;
-	width: 400px;
+	width: 500px;
 	font-size: 200%;
-
+	padding:10px;
 }
 
 #blienhenriklink a h1:hover {
@@ -617,10 +608,20 @@ margin-bottom: -10px;
 		text-align: right;
 		padding-right: 20px;
 	}
+	#blienhenriklink a h1 {
+		color: #faa21b;
+		background-color: #043b7c;
+		text-align: center;
+		position: relative;
+		margin-top: 60px;
+		width: 50%;
+		font-size: 200%;
+		padding:10px;
+	}
 }
-/*when widescreen and height <600px
+/*when widescreen and height <700
 @media screen and (min-width:800px){*/
-@media screen and (max-height:600px){
+@media screen and (max-height:700px){
 	#logo {
 		width: 75px;
 		border-radius: 50%;
@@ -663,11 +664,3 @@ margin-bottom: -10px;
 }
 
 
-
-
-
-
-
-/*to do responsive design:
--- fikse henrik or not
--- lavere meny med page height <600px

@@ -372,20 +372,10 @@ input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, te
 
 
 					/************* SLUTT PÅ BLI EN HENRIK - Thomas *************/
-					/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
-
-#forsideInfo {
-text-align: left;
-margin: 50px;
-}
-
-#forsideInfo > h1 {
-text-align: left;
-margin-bottom: -10px;
-}
+	
 
 
-
+					
 						/*************** SITATER ****************/
 /*selve sitatteksten*/
 #sitat {

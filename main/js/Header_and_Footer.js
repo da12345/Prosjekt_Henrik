@@ -12,8 +12,9 @@ y = document.body.innerHTML = `<header>
 		</nav>
 	</header>` + document.body.innerHTML + `<footer>
 		<p>Nettsiden er produsert av Daniel Jan Axlid, Henrik Ytrehus Ågotnes, Thomas Baugerød, Jakob Lien og Morten Tobias Rinde Sunde</p>
-	</footer>`;
-	
+	</footer>`;/*Dette setter inn Header og Footer før og etter body*/
+
+
 function myFunction() {
 	var nav = Array.from(document.getElementsByClassName("nav"))
 	var x = document.getElementById("myTopnav");

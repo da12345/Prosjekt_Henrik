@@ -334,7 +334,6 @@ input[type=text], input[type=number] {
 form, h2 {
 	font: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif, bolder;
 	font-size: 140%;
-	font-weight: 250;
 	text-align: center;
 	color:black;
 	padding: 12px 0;
@@ -346,8 +345,6 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
 	outline: none;
 	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	width: 100%;
 	background: #fff;
 	margin-bottom: 3%;
@@ -357,7 +354,7 @@ input[type=text], input[type=number], input[type=checkbox], textarea, select
 
 	
 }
-input[type=text]:focus, input[type=number]:focus, input[type=checkbox]:focus, textarea:focus, select:focus
+input[type=text]:focus, input[type=number]:focus, textarea:focus, select:focus
 {
 	box-shadow: 0 0 5px #043b7c;
 	border: 3px solid #043b7c;

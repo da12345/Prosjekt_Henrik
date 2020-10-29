@@ -1,6 +1,5 @@
 window.playing = false;
 function uttal(ord){
-	console.log(ord)
 	let audioElem = document.querySelector("#"+ord);
 	let spanElem = document.querySelector("span[onmouseover=\"uttal('"+ord+"')\"]");
 	if(!window.playing){

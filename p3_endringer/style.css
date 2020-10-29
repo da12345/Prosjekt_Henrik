@@ -1,0 +1,665 @@
+/*
+Blåfarge: #043b7c
+Gulfarge: #faa21b
+Font for headers i Chrome: "Playfair Display SC"
+*/
+
+/*Bakgrunn og generellt fargetema*/
+body{
+    background-color: whitesmoke;
+	margin: 0 0 0 0;
+	font-family: "Bodoni 72 Oldstyle Book", "Playfair Display", sans-serif;
+}
+
+/*Alle headers*/
+h1,h2,h3,h4 {
+	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+}
+
+/*Header og footer farga*/
+header, footer {
+    background-color: #043b7c;
+	padding: 30px;
+	text-align: center;
+}
+
+header{
+	padding-bottom: 15px;
+}
+
+/*Navbar styling*/
+@media screen and (min-width: 800px) {
+	.topnav {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 15px;
+		border-top: #faa21b 1px solid;
+	}
+}
+/*Strekene mellom navbar-knapper*/
+nav div{
+	width: 1px;
+	height: 20px;
+	background-color: #faa21b; 
+}
+
+nav a{
+	font-family: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+}
+
+/*Full zoom på knappan on hover, om siden er stor nok at det ikke skal se rart ut*/
+@media screen and (min-width: 930px) {
+	nav a{
+		transition: transform .2s ease-out;
+	}
+	nav a:hover {
+		transform: scale(1.2);
+	}
+}
+/*Mindre zoom på knappan on hover, hvis siden er mindre, men ikke dropdown-navbar*/
+@media screen and (max-width: 930px) {
+	nav a{
+		transition: transform .2s ease-out;
+	}
+	nav a:hover {
+		transform: scale(1.05);
+	}
+}
+/*Ingen zoom på knappan on hover, hvis dropdown-navbar*/
+@media screen and (max-width: 800px) {
+	nav a{
+		transition: none;
+	}
+	nav a:hover {
+		transform: none;
+	}
+}
+
+/*logo styling*/
+#logo {
+	width: 250px;
+	border-radius: 50%;
+	padding: 3px;
+	background-color: whitesmoke;
+	margin-bottom: 20px;
+	transition: transform .2s ease-out;
+}
+#bars {
+	transition: transform .2s ease-out;
+}
+#bars:hover {
+		transform: scale(1.1);
+}
+#cross {
+	transition: transform .2s ease-out;
+}
+#cross:hover {
+		transform: scale(1.1);
+}
+
+/*Artikkel styling*/
+article{
+	margin: auto;
+	width: 65%
+}
+
+h2:first-child{
+	text-align: center;
+}
+
+/*Alle bilder i articles UTENOM Henrik or Not*/
+article:not(#henrik_or_not) img{
+	width: 40%
+}
+
+/*Tekstfarge til navbar og footer*/
+header *, footer *{
+	color: #faa21b;
+}
+
+/*Footer styling*/
+html, body {
+	min-height:100%;
+	position:relative;
+}
+
+/*DEN FUCKINGS MAGIEN E SKREIV SOM FIKK FOOTERN TE Å HOLD SEG PÅ BUNNEN! https://youtu.be/lr6sTZjnHJA?t=2*/
+body {
+   padding-bottom: 77px; 
+}
+footer {
+	position:absolute;
+    width: 100%;
+    padding: 15px 0 15px 0;
+	top: calc(max(100%, 100vh) - 47px);/*I've been looking at this for four hours now, it's beautiful*/
+}
+footer p {
+	margin: 0;
+	font-size: 0.8em;
+}
+	/*Den her gjør at jeg ikke får fjerna bulletsene i boksgriden min - Morten
+
+						/*Gule punkt: Om noen lager ul, ellers delete før innlevering
+						ul {
+							list-style: none;
+						}
+												
+						ul li::before {
+							content: "\2022";
+							color: #043b7c;
+							font-weight: bold;
+							display: inline-block;
+							width: 1em;
+							margin-left: -1em;
+						}
+						*/
+
+/*Fjerner underline på tekstlenke*/
+a:link {
+	text-decoration: none;
+  }
+  
+/*Felles styling for alle knapper på siden (nå brukt på "Henrik or Not" og "Historiske Henriker")*/
+input[type="submit"] {
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	height: 50px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+input:hover[type="submit"] {
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	height: 50px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: auto;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+					/************* TipBox - Jakob *************/
+
+.tipBox{
+	position: fixed;
+	width: 200px;
+	right: 0;
+	top: 50%;
+	background-color: whitesmoke;
+	border-radius: 10px 0 0 10px;
+	border: dashed 2px #043b7c;
+	padding: 6px;
+	border-right: none;
+}
+
+					/************* SLUTT PÅ TipBox - Jakob *************/
+					
+					/*HENRIK_OR_NOT.HTML - daniel*/
+/*Fieldsets som innholder svarsalternativen*/					
+.selection {
+	width:50%;
+	float: right;
+	border: 3px solid #043b7c;
+	font: 25px "Bodoni 72 Oldstyle Book", "Playfair Display", sans-serif;
+	border:none;
+	vertical-align:middle;
+	padding-bottom: 10px;
+	text-align: left;
+}
+/*Styling og posisjonering for hele articelen*/
+#henrik_or_not {
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	padding: 10px;
+	margin-bottom: 70px;
+}
+/*Bilderne til Henrik or Not*/
+#henrik_or_not img {
+	border: 3px solid #043b7c;
+	height:300px;
+}
+
+input[type="submit"], #henrikkjenner, #meldInnKnapp{
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	height: 60px;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+input:hover[type="submit"], #henrikkjenner:hover, #meldInnKnapp:hover {
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	text-shadow:none;
+}
+
+#previous, #next {
+	width:50%;
+	height:60px;
+	display: block;
+	float: left;
+	background: #043b7c;
+	color:#faa21b;
+	border-style: outset;
+	border-color:gray;
+	text-align: center;
+	font: bold 40px "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	text-shadow:none;
+}
+
+#previous:hover, #next:hover{
+	background: rgb(0, 25, 139);
+	color:#faa21b;
+	border-style: outset;
+	border-color: gray;
+	display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	text-align: center;
+	text-shadow:none;
+}
+
+#henrik_or_not form{
+	min-width: 550px;
+}
+
+#henrik_or_not fieldset{
+	max-width: 50%;
+}
+
+#henrikkjenner {
+	width:100%;
+	font-size: 30px;
+}
+
+#svar{
+	text-align: center;
+}
+
+					/*SLUT PÅ HENRIK_OR_NOT.HTML - daniel*/
+
+
+					/************* BLI EN HENRIK - Thomas *************/
+
+#meldInn{
+	text-align: center;
+}
+
+/***
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+
+input[type=number], select, textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid;
+	border-radius: 2px;
+	resize: vertical;
+}
+***/
+input[type=text], input[type=number] {
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	max-width: 450px;
+	background: #f7f7f7;
+	padding: 15%;
+}
+form, h2 {
+	font: "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif, bolder;
+	font-size: 140%;
+	text-align: center;
+	color:black;
+	padding: 12px 0;
+
+
+}
+input[type=text], input[type=number], input[type=checkbox], textarea, select
+{
+	font: 95% "Bodoni 72 Smallcaps Book", "Playfair Display SC", sans-serif;
+	outline: none;
+	box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 3%;
+	border: 1px solid white;
+	padding: 1.5%;
+	text-align: center;
+
+	
+}
+input[type=text]:focus, input[type=number]:focus, textarea:focus, select:focus
+{
+	box-shadow: 0 0 5px #043b7c;
+	border: 3px solid #043b7c;
+	padding: 1.5%
+
+}
+
+
+
+
+
+
+
+
+					/************* SLUTT PÅ BLI EN HENRIK - Thomas *************/
+	
+
+
+
+						/*************** SITATER ****************/
+/*selve sitatteksten*/
+#sitat {
+	font-family: 'Parisienne', cursive;
+	font-size: 70px;
+	text-align: center;
+}
+/*div som holder sitaten og kildepersonen*/
+#sitatboks {
+	margin: auto;
+	width: 90%;
+	height:100%;
+  	border: 3px solid #043b7c;
+	padding: 10px;
+	padding-top: 0px;
+}
+/*basically hele siden*/
+#sitatarticle {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+/*teksten for kildepersonen*/
+#kilde {
+	font-family: 'Parisienne', cursive;
+	font-size: 40px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+						/*************** BAKGRUNNSBILDER  **************/
+.etymologi { 
+background: 
+	linear-gradient(
+		rgba(0, 0, 0, 0.10), 
+		rgba(0, 0, 0, 0.10)
+	),
+	url(/media/images/instaboksBilder/henrikOrNotGuleTomler.png)
+}
+
+
+
+
+
+
+
+
+							/****************** FORSIDE - INDEX.HTML - MORTEN ********************/
+#forsideInfo {
+	text-align: left;
+	margin: 50px;
+}
+
+#forsideInfo > h1 {
+text-align: left;
+margin-bottom: -10px;
+}
+
+.bokseseksjon {
+	position: relative;
+	height: 300px;
+	width: 100%;
+	margin: 50px;
+}
+.bokseseksjon h2 {
+	text-align: left;
+	font-size: 1.5em;
+	margin-bottom: -5px;
+}
+
+.boksestyle {
+	border: solid;
+	border-color: #043b7c;
+	background-color: white;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	text-align: center;
+	margin: 3px;
+}
+
+.bokseseksjon h1 {
+	font-size: 1.12em;
+	color: black;
+}
+
+.boksestyle:hover {
+	transform: scale(1.025);
+	transition: 0.2s ease-in-out;
+}
+
+/*Ikoner*/
+
+#etymologiboks {
+	background: url(../media/images/forsideikoner/ikonEtymologi.jpg);
+	background-position: center;
+	height: 100%;
+	margin-top: -6%;
+}
+
+#historiskehenrikerboks {
+	background: url(../media/images/forsideikoner/ikonHistorie320.png);
+	background-size: 86%;
+	background-position: center;
+	height: 100%;
+	margin-top: -7%;
+}
+
+#henrikornotboks {
+	background: url(../media/images/forsideikoner/ikonHenrikOrNot320.png);
+	background-size: 88%;
+	background-position: center;
+	background-position-y: 250%;
+	height: 100%;
+	margin-top: -6%;
+}
+
+#sitaterboks {
+	background: url(../media/images/forsideikoner/ikonHenrikSitater.png);
+	background-position: center;
+	background-size: 90%;
+	height: 100%;
+	margin-top: -7%;
+}
+.bars {
+	display:none;
+}
+.cross {
+	display:none;
+}
+
+
+#blienhenriklink a h1 {
+	color: #faa21b;
+	background-color: #043b7c;
+	text-align: center;
+	position: relative;
+	margin-top: 60px;
+	width: 500px;
+	font-size: 200%;
+	padding:10px;
+}
+
+#blienhenriklink a h1:hover {
+	background: rgb(0, 25, 139);
+}
+						
+			/******** RESPONSIVE DESIGN - DANIEL *********/
+/*dropdown nav*/
+/*when width <800px*/
+@media screen and (max-width: 800px) {
+	article{
+		margin: auto;
+		width: 90%
+	}
+	header{
+		padding-top: 30px;
+		text-align: center;
+		height: 316px;
+	}
+	footer {
+		font-size: 15px;
+	}
+	/*hides ordinary menu items*/
+	.topnav a {
+		display: none;
+	}
+	/*hides nav separating bars*/
+	nav div {
+		display: none;
+	}
+	/*hides yellow top border*/
+	.topnav {
+		border-top: none;
+	}
+	/*displays bars icon as default and sets positioning*/
+	.bars {
+		display: block;
+		overflow: hidden;
+		position: absolute;
+		float:left;
+		left:23px;
+	}
+	/* hides cross icon as default and sets positioning*/
+	.cross {
+		display:none;
+		overflow: hidden;
+		position: absolute;
+		float:left;
+		left:23px;
+	}
+	/*displays cross when bars clicked (when function activated)*/
+	.cross.responsive {
+		display:block;
+	}
+	/*hides bars when bars clicked (when function activated)*/
+	.bars.responsive {
+		display:none;
+	}
+	/*sets properties for and displays dropdown menu a links*/
+	.nav.responsive {
+		display: block;
+		width:100%;
+		font-size: 20px;
+	}
+	/*nav container for dropdown*/
+	.topnav.responsive {
+		background-color: #043b7c;
+		width:190px;
+		border-radius: 0.5em;
+		text-align: center;
+		padding: 20px;
+		z-index: 0;
+		position: absolute;
+		left:0px;
+		top:350px;
+	}
+	/*padding between dropdown nav links*/
+	.nav.responsive {
+		padding:5px;
+	}
+	/*selve sitatteksten*/
+	#sitat {
+		font-family: 'Parisienne', cursive;
+		font-size: 50px;
+		text-align: center;
+}
+	/*teksten for kildepersonen*/
+	#kilde {
+		font-family: 'Parisienne', cursive;
+		font-size: 30px;
+		text-align: right;
+		padding-right: 20px;
+	}
+	#blienhenriklink a h1 {
+		color: #faa21b;
+		background-color: #043b7c;
+		text-align: center;
+		position: relative;
+		margin-top: 60px;
+		width: 50%;
+		font-size: 200%;
+		padding:10px;
+	}
+}
+/*when widescreen and height <700
+@media screen and (min-width:800px){*/
+@media screen and (max-height:700px){
+	#logo {
+		width: 75px;
+		border-radius: 50%;
+		padding: 0.7px;
+		background-color: whitesmoke;
+		margin-bottom: 20px;
+		transition: transform .2s ease-out;
+		float: left;
+		display:block;
+	}
+	header {
+		height:25px;
+		padding-top: 7px;
+	}
+	.topnav {
+		border-top: none;
+		padding-top: 7px;
+	}
+
+	@media screen and (max-width:800px) {
+		.bars{
+			position: relative;
+			float:right;
+		}
+		.cross{
+			position: relative;
+			float:right
+		}
+		.topnav.responsive {
+			z-index: 1;
+			position: absolute;
+			right:0px;
+			top:40px;
+			border-radius: 0.5em;
+			padding-top: 0px;
+			left:100vw;
+			transform: translate(-230px);
+		}
+	}
+}
+
+

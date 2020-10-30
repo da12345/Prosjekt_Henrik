@@ -459,9 +459,12 @@ margin-bottom: -10px;
 	color: black;
 }
 
+.boksestyle {
+	transition: 0.2s ease-in-out;
+}
+
 .boksestyle:hover {
 	transform: scale(1.025);
-	transition: 0.2s ease-in-out;
 }
 
 /*Ikoner*/

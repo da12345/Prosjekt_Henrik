@@ -40,11 +40,12 @@ function validateForm(){/*Går gjennom og sjekker at alle felt er fyllt inn*/
 	}
 	
 	if(form["alder"].value === ""){/*Sjekker at alder er fyllt inn*/
-		if(19 <= parseInt(form["alder"].value) && parseInt(form["alder"].value) <= 100){/*Sjekker at alder er gyldig(mellom 19 og 100)*/
-			alert("Fyll inn alderen din")
-		}else{
-			alert("Sett inn en gyldig alder mellom 19 og 100(begge inklusive)")
-		}
+		alert("Fyll inn alderen din")
+		return false;
+	}
+	
+	if(!(19 <= parseInt(form["alder"].value) && parseInt(form["alder"].value) <= 100)){/*Sjekker at alder er gyldig(mellom 19 og 100)*/
+		alert("Sett inn en gyldig alder mellom 19 og 100(begge inklusive)")
 		return false;
 	}
 	

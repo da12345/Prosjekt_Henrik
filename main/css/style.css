@@ -623,7 +623,7 @@ margin-bottom: -10px;
 }
 /*when widescreen and height <600
 @media screen and (min-width:800px){*/
-@media screen and (max-height:600px){
+@media screen and (max-height:500px){
 	#logo {
 		width: 75px;
 		border-radius: 50%;

@@ -1,3 +1,4 @@
+//Sitater og opphavshenriker
 const sitater = [["De siste gjester vi fulgte til grinden; farvellets rester tok nattevinden.", "Henrik Ibsen"],
 ["Divorced, beheaded, died, divorced, beheaded, survived", "Henry VIII of England"],
 ["Bokhyllen er den stige, hvorved du bliver din overmanns lige.", "Henrik Wergeland"],
@@ -16,8 +17,10 @@ const sitater = [["De siste gjester vi fulgte til grinden; farvellets rester tok
 ["We are all agreed that your theory is crazy. The question that divides us is whether it is crazy enough to have a chance of being correct.", "Henrik Bohr"], 
 ["No, no, you are not thinking, you are just being logical.", "Henrik Bohr"]];
 
+//Funksjon som henter frem tilfeldig sitat
 function nyttSitat(sitatElem = document.querySelector("#sitat"), kildeElem = document.querySelector("#kilde")){
 	let nyttSitat = sitater[Math.floor(Math.random() * sitater.length)];
+//If-setning som sikrer at det alltid hentes frem et nytt sitat, ulikt det som allerede vises
 	if(nyttSitat[0] !== sitatElem.innerHTML){
 		sitatElem.innerHTML = nyttSitat[0];
 		kildeElem.innerHTML = "-"+nyttSitat[1];

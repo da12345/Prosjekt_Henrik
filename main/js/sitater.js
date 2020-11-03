@@ -19,12 +19,11 @@ const sitater = [["De siste gjester vi fulgte til grinden; farvellets rester tok
 
 //Funksjon som henter frem tilfeldig sitat
 function nyttSitat(sitatElem = document.querySelector("#sitat"), kildeElem = document.querySelector("#kilde")){
-	let nyttSitat = sitater[Math.floor(Math.random() * sitater.length)];
-//If-setning som sikrer at det alltid hentes frem et nytt sitat, ulikt det som allerede vises
-	if(nyttSitat[0] !== sitatElem.innerHTML){
+	let nyttSitat = sitater[Math.floor(Math.random() * sitater.length)];//Velge tilfeldig element fra lista
+	if(nyttSitat[0] !== sitatElem.innerHTML){//Hvis det er et annet sitat enn det som er der, sett det inn
 		sitatElem.innerHTML = nyttSitat[0];
 		kildeElem.innerHTML = "-"+nyttSitat[1];
-	}else{
+	}else{//Hvis det er det samme, kall funksjonen igjen, intill den får et nytt sitat.
 		window.nyttSitat(sitatElem, kildeElem);
 	}
 }
